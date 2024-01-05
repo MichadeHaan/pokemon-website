@@ -55,7 +55,7 @@ async function displayAllPokemonData() {
             const pokemonImage = pokemonDetails.sprites.front_default;
             const pokemonTypes = pokemonDetails.types.map(type => {
                 const typeName = type.type.name;
-                const typeImage = `/pokemon-website/code/img/types/${typeName}.svg`;
+                const typeImage = `/code/img/types/${typeName}.svg`;
                 return `<div class="icon ${typeName}"><img src="${typeImage}" alt="pokemon-type"></div>`;
             }).join(' ');
 
@@ -89,7 +89,7 @@ async function showAdditionalInfoOffcanvas(pokemonUrl, buttonElement) {
         if (pokemonDetails.types && Array.isArray(pokemonDetails.types)) {
             const typesWithImages = pokemonDetails.types.map(type => {
                 const typeName = type.type.name;
-                const typeImage = `/pokemon-website/code/img/types/${typeName}.svg`;
+                const typeImage = `/code/img/types/${typeName}.svg`;
                 return `<img src="${typeImage}" alt="${typeName}" class="pokemon-type"> ${typeName}`;
             }).join(' ');
 

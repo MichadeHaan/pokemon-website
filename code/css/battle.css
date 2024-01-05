@@ -55,7 +55,7 @@ body {
 }
 
 #opponent-team {
-    background-image: url('/pokemon-website/code/img/team2.jpg');
+    background-image: url('/code/img/team2.jpg');
     background-size: 16.7% auto;
     background-repeat: repeat;
     background-color: #007185;
@@ -63,7 +63,7 @@ body {
 }
 
 #player-team {
-    background-image: url('/pokemon-website/code/img/team1.jpg');
+    background-image: url('/code/img/team1.jpg');
     background-size: 16.7% auto;
     background-repeat: repeat; 
     background-color: #587e00;
@@ -90,7 +90,7 @@ body {
 }
 
 .battle-field {
-    background-image: url('/pokemon-website/code/img/battle.jpg');
+    background-image: url('/code/img/battle.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
