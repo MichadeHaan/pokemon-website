@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
-    background-image: url(/code/img/Bulbasaur_Charmander_Squirtle.jpg);
+    background-image: url('/pokemon-website/code/img/Bulbasaur_Charmander_Squirtle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
