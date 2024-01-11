@@ -19,7 +19,7 @@ Welkom bij de Pokémon-website! Hier kun je alle Pokémon verkennen in een virtu
 
 ## Gebruik
 
-open de welkom.html file en begin je Pokémon-avontuur! Volg de instructies op het scherm om de Pokédex te verkennen en deel te nemen aan gevechten.
+open de welkom.html file in je browser en begin je Pokémon-avontuur! Volg de instructies op het scherm om de Pokédex te verkennen en deel te nemen aan gevechten.
 
 ## Pokédex
 
