@@ -18,6 +18,8 @@ header {
 
 .pokedex img{
     position: relative;
-    top: 369px;
-    left: 319px;
+    height: 170px;
+    width: 118px;
+    top: 409px;
+    left: 340px;
 }
