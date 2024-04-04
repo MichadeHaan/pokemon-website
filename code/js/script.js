@@ -46,11 +46,9 @@ async function displayAllPokemonData() {
     const pokedexDiv = document.getElementById('pokedex');
 
     try {
-        // Fetch all Pokemon data
         const allPokemon = await getAllPokemonData();
 
         for (const pokemon of allPokemon) {
-            // Fetch details for each Pokemon
             const pokemonDetails = await getPokemonData(pokemon.url);
 
             const pokemonName = pokemonDetails.name;
@@ -61,7 +59,6 @@ async function displayAllPokemonData() {
                 return `<div class="icon ${typeName}"><img src="${typeImage}" alt="pokemon-type"></div>`;
             }).join(' ');
 
-            // Create a Pokemon element
             const pokemonElement = document.createElement('div');
             pokemonElement.classList.add('pokemon-container');
 
@@ -82,17 +79,13 @@ async function displayAllPokemonData() {
 
 async function showAdditionalInfoOffcanvas(pokemonUrl, buttonElement) {
     try {
-        // Fetch additional details for the selected Pokemon
         const pokemonDetails = await getPokemonData(pokemonUrl);
 
-        // Create and display the offcanvas
         const offcanvas = document.createElement('div');
         offcanvas.classList.add('offcanvas');
 
-        // Dynamically generate HTML content for the offcanvas
         let offcanvasContent = '';
 
-        // Show types with images
         if (pokemonDetails.types && Array.isArray(pokemonDetails.types)) {
             const typesWithImages = pokemonDetails.types.map(type => {
                 const typeName = type.type.name;
@@ -103,7 +96,6 @@ async function showAdditionalInfoOffcanvas(pokemonUrl, buttonElement) {
             offcanvasContent += `<p><strong>Types:</strong> ${typesWithImages}</p>`;
         }
 
-        // Display other information
         for (const property in pokemonDetails) {
             if (
                 pokemonDetails.hasOwnProperty(property) &&
@@ -135,10 +127,8 @@ async function showAdditionalInfoOffcanvas(pokemonUrl, buttonElement) {
             ${offcanvasContent}
         `;
 
-        // Append the offcanvas to the body
         document.body.appendChild(offcanvas);
 
-        // Close the offcanvas when clicking outside of it
         window.addEventListener('click', function (event) {
             if (event.target === offcanvas) {
                 closeOffcanvas();
@@ -176,7 +166,6 @@ function searchPokemon(inputId) {
     });
 }
 
-// Functie om naar boven te scrollen
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -184,5 +173,4 @@ function scrollToTop() {
     });
 }
 
-// Roep de functie aan om alle Pokémon weer te geven bij het laden van de pagina
 displayAllPokemonData();
