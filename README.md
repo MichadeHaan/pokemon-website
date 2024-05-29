@@ -14,7 +14,7 @@ Welkom bij de Pokémon-website! Hier kun je alle Pokémon verkennen in een virtu
 
 1. **Kloon de repository:**
    ```bash
-   git clone https://github.com/jouw-gebruikersnaam/pokemon-website.git
+   git clone https://github.com/MichadeHaan/pokemon-website.git
    cd pokemon-website
 
 ## Gebruik
